@@ -1,0 +1,17 @@
+<html>
+
+<body bgcolor="cyan" color="yellow">
+<center>
+<form id="login" name="form" method="post" class="margtop10">
+						<label for="file">Nome - ID:</label>
+						<input name="username" id="username" type="text" style="width: 130px;" />
+						<br />
+						<label for="file">Password :</label>
+						<input name="password" id="password" type="password" style="width: 130px;" class="margtop10"/><br />
+						<input name="loginButton" id="loginButton" type="button" value="Entrar" class="button white margbot10 margtop10" style="width: 130px;" onclick="switchLogin()" />
+						<br />
+						<br />
+</form>
+</center>
+</body>
+<html>
