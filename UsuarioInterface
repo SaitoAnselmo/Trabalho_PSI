@@ -1,10 +1,14 @@
 <html>
 
-<body bgcolor="cyan" color="yellow">
+<body bgcolor="gray" color="yellow">
 <center>
+<link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\Stile.css"/>
+<ul id="menu">
+	<li><a href ="#" > Cadastre-se </a></li>
+</ul>
 <span class="tit">Bem-vindo</span><br />
-<form id="login" name="form" method="post" class="margtop10">
-						<label for="file">Nome - ID:</label>
+<form action="UsuarioDB.php" id="login" name="form" method="post" class="margtop10">
+						<label for="file"> Nome - ID:</label>
 						<input name="username" id="username" type="text" style="width: 130px;" />
 						<br />
 						<label for="file">Password :</label>
