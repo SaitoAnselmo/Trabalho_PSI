@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+
+#menu{
+	width:350px;
+	height:auto;
+	background:#333;
+	margin:0 auto;
+	border-radius:10px;
+}
+
+#menu li{
+	list-style:none;
+	margin-right:30px;
+}
+
+#menu li:hover{
+	background:#999;
+}
+
+#menu li a{
+	font-family:Verdana,Geneva, sans-serif;
+	font-size:18px;
+	color:#FFF;
+	text-decoration:none;
+}
