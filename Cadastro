@@ -1,0 +1,14 @@
+<?
+	include "connection.php";
+	
+	$nome=$_post['Nome'];
+	$nome=$_post['Sobrenome'];
+	$nome=$_post['Apelido'];
+	$nome=$_post['Email'];
+	$nome=$_post['Login'];
+	$nome=$_post['Senha'];
+	$nome=$_post['Confirmar Senha'];
+	
+	$sql=mysql_query("INSERT INTO usuario(Nome,Sobrenome,Apelido,Email,Login,Senha, Confirmar Senha) value('$Nome','$Sobrenome','$Apelido','$Email','$Login','$Senha','$Confirmar Senha')");
+	header("Location: Cadastro.php");
+?>
