@@ -1,14 +1,35 @@
-<?
+<?php
 	include "connection.php";
 	
-	$nome=$_post['Nome'];
-	$nome=$_post['Sobrenome'];
-	$nome=$_post['Apelido'];
-	$nome=$_post['Email'];
-	$nome=$_post['Login'];
-	$nome=$_post['Senha'];
-	$nome=$_post['Confirmar Senha'];
+		
+	$Nome=$_POST['Nome'];
+	$Sobrenome=$_POST['Sobrenome'];
+	$Apelido=$_POST['Apelido'];
+	$Email=$_POST['Email'];
+	$Login=$_POST['Login'];
+	$Senha=$_POST['Senha'];
 	
-	$sql=mysql_query("INSERT INTO usuario(Nome,Sobrenome,Apelido,Email,Login,Senha, Confirmar Senha) value('$Nome','$Sobrenome','$Apelido','$Email','$Login','$Senha','$Confirmar Senha')");
-	header("Location: Cadastro.php");
+	$go=strlen($Senha);
+	
+	
+	
+	if($go<5){
+		echo "<meta http-equiv='refresh' content='0; url= Cadastro.php' />
+		<script type='text/javascript'> alert('Sua senha deve conter pelo menos 5 caracteres.')</script>";
+	}else	if(substr_count($Email,'@')==1 && substr_count($Email,'.com')==1){
+		$sql=mysql_query("Select * from usuario where login = '$Login'");
+	
+		if(mysql_num_rows($sql)>0){
+			echo "<meta http-equiv='refresh' content='0; url= Cadastro.php' />
+			<script type='text/javascript'> alert('Login ja existente.')</script>";
+		}else{
+			$sql=mysql_query("INSERT INTO usuario (Nome,Email,Apelido,Senha,login,sobrenome) value ('$Nome','$Email','$Apelido','$Senha','$Login','$Sobrenome')");
+			header("Location: USUARIO.html");
+		}
+	}else{
+		echo "<meta http-equiv='refresh' content='0; url= Cadastro.php' />
+		<script type='text/javascript'> alert('Endereco de email invalido.')</script>";
+	}
+	
+	
 ?>
