@@ -1,0 +1,14 @@
+<html>
+<body bgcolor="gray">
+<center>
+<link rel="stylesheet" type="text/css" href="Stile.css"/>
+<ul id="menu">
+	<li><a href="Uploading.html"> Upload </a></li>
+	<li><a href="Mycata.php"> Meu Catalogo </a></li>
+	<li><a> Catalogos </a></li>
+	
+</ul>
+
+</center>
+</body>
+</html>
