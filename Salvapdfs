@@ -1,0 +1,13 @@
+<?php
+	include "connection.php";
+	$pdf = $_POST['pdf'];
+
+	$sql = mysql_query("Insert into arquivo(Nome,Link,Oculto) value ()") or die(mysql_error());
+	if(mysql_num_rows($sql) == 1){
+		header("Location: uploading.html");
+	}else{
+		echo "<meta http-equiv='refresh' content='0; url= Usuario.html' />
+		<script type='text/javascript'> alert('Senha ou Login nao correspondem.')</script>";
+	}
+	
+?>
