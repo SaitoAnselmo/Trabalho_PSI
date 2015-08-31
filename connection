@@ -1,4 +1,7 @@
-<?
-	$db = mysql_connect("localhost","root","");
-	mysql_select_db("psireader",$db);
+<?php
+	$user = 'root';
+	$pass = '';
+	$db	= 'psireader';
+	$db =mysql_connect('localhost','root','') or die("Unable to connect!");
+	mysql_select_db("psireader") or die(mysql_error());
 ?>
