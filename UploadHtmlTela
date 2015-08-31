@@ -1,0 +1,18 @@
+<html>
+<body bgcolor="gray">
+<center>
+<link rel="stylesheet" type="text/css" href="Stile.css"/>
+<ul id="menu">
+	<li><a> Upload </a></li>
+	<li><a href="Mycata.php"> Meu Catalogo </a></li>
+	<li><a href="Cata.php"> Catalogos </a></li>
+</ul>
+<br/>
+<form name="form" method="post" action="savepdf.php" enctype="multipart/form-data">
+<label> Selecione o arquivo PDF: </label>
+<input type="file" name="pdf" id="pdf" /><br />
+<input type="submit" name="envia" value="Enviar" />
+</form>
+</center>
+</body>
+</html>
