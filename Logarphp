@@ -1,0 +1,14 @@
+<?php
+	include "connection.php";
+	$username = $_POST['username'];
+	$password =	$_POST['password'];
+
+	$sql = mysql_query("SELECT * from usuario where login = '$username' AND senha = '$password'") or die(mysql_error());
+	if(mysql_num_rows($sql) == 1){
+		header("Location: uploading.html");
+	}else{
+		echo "<meta http-equiv='refresh' content='0; url= Usuario.html' />
+		<script type='text/javascript'> alert('Senha ou Login nao correspondem.')</script>";
+	}
+	
+?>
