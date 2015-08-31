@@ -2,21 +2,24 @@
 
 <body bgcolor="gray" color="yellow">
 <center>
-<link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\Stile.css"/>
+<link rel="stylesheet" type="text/css" href="Stile.css"/>
 <ul id="menu">
-	<li><a href ="#" > Cadastre-se </a></li>
+	<li><a href ="Cadastro.php" > Cadastre-se </a></li>
 </ul>
 <span class="tit">Bem-vindo</span><br />
-<form action="UsuarioDB.php" id="login" name="form" method="post" class="margtop10">
+<form action="logar.php" id="loginButton" name="loginButton" method="post" class="margtop10">
 						<label for="file"> Nome - ID:</label>
 						<input name="username" id="username" type="text" style="width: 130px;" />
 						<br />
 						<label for="file">Password :</label>
 						<input name="password" id="password" type="password" style="width: 130px;" class="margtop10"/><br />
-						<input name="loginButton" id="loginButton" type="button" value="Entrar" class="button white margbot10 margtop10" style="width: 130px;" onclick="switchLogin()" />
+						<input name="loginButton" id="Button" type="submit" value=" Entrar"  style="width: 130px;" />	
 						<br />
 						<br />
 </form>
 </center>
 </body>
+
 <html>
+
+
