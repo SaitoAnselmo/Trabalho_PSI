@@ -2,12 +2,13 @@
 
 <body bgcolor="gray" color="yellow">
 <center>
-<link rel="stylesheet" type="text/css" href="C:\xampp\htdocs\StileCadastro.css"/>
+<link rel="stylesheet" type="text/css" href="Stile.css"/>
 <ul id="menu">
-	<li><a> Cadastro </a></li>
+	<li><a href ="Usuario.html"> Pagina Inicial </a></li>
+	
 </ul>
-<form action="UsuarioDB.php" id="login" name="form" method="post" class="margtop10">
-						
+<form action="UsuarioDB.php" id="loginButton" name="loginButton" method="post" class="margtop10">
+
 						
 						<input type="text" class="inputtext _58mg _5dba _2ph-" data-type="text" name="Nome" aria-required="1" placeholder="Nome" id="u_0_1" aria-label="Nome" />
 						<br />
@@ -19,12 +20,9 @@
 						<br />
 						<input type="text" class="inputtext _58mg _5dba _2ph-" data-type="text" name="Login" aria-required="1" placeholder="Login" id="u_0_1" aria-label="Login" />
 						<br />
-						<input type="text" class="inputtext _58mg _5dba _2ph-" data-type="text" name="Senha" aria-required="1" placeholder="Senha" id="u_0_1" aria-label="Senha" />
+						<input type="password" class="inputtext _58mg _5dba _2ph-" data-type="text" name="Senha" aria-required="1" placeholder="Senha" id="u_0_1" aria-label="Senha" />
 						<br />
-						<input type="text" class="inputtext _58mg _5dba _2ph-" data-type="text" name="Confirmar Senha" aria-required="1" placeholder="First name" id="u_0_1" aria-label="Confirmar Senha" />
-						<br />
-						<input name="loginButton" id="loginButton" type="button" value=" Confirmar" class="button white margbot10 margtop10" style="width: 130px;" onclick="switchLogin()" />
-						<br />
+						<input name="loginButton" id="Button" type="submit" value=" Cadastrar"  style="width: 130px;" />																						
 						<br />
 </form>
 </center>
